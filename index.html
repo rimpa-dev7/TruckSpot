@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Truck Spot – Concept 3: Dusk Market</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+ <style>
+    .btns{display:flex;gap:12px;flex-wrap:wrap}
+
+.store{
+  display:flex;align-items:center;gap:10px;
+  min-height:52px;padding:8px 20px 8px 14px;
+  background:#1b1244;border:1px solid #5a4a9a;border-radius:10px;
+  color:#fff;text-decoration:none;
+  box-shadow:0 8px 20px rgba(20,5,50,.35);
+  transition:transform .15s;
+}
+.store:hover{transform:translateY(-2px)}
+.store svg{flex:none}
+.store .sx{display:block;font-size:.65rem;line-height:1.1;opacity:.85}
+.store b{display:block;font-size:1.15rem;font-weight:600;line-height:1.15}
+
+
+ </style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFC24B"/><stop offset=".5" stop-color="#FF7A3D"/><stop offset="1" stop-color="#FF4F8B"/></linearGradient></defs>
+<symbol id="mark" viewBox="0 0 130 140">
+ <path d="M70 136S18 88 18 56a52 52 0 0 1 104 0c0 32-52 80-52 80Z" fill="url(#lg)"/>
+ <g fill="none" stroke="#2A1459" stroke-width="6" stroke-linecap="round"><path d="M4 48h14M0 60h18M6 72h12"/></g>
+ <path d="M34 40h42a5 5 0 0 1 5 5v7h9l10 11v13H34Z" fill="#2A1459"/>
+ <rect x="42" y="46" width="26" height="14" rx="3" fill="#FFC24B"/>
+ <circle cx="48" cy="78" r="7" fill="#2A1459" stroke="#fff" stroke-width="3"/><circle cx="84" cy="78" r="7" fill="#2A1459" stroke="#fff" stroke-width="3"/>
+</symbol>
+<symbol id="truck" viewBox="0 0 300 150">
+ <rect x="10" y="30" width="170" height="85" rx="12" fill="#FFC24B"/><path d="M180 55h50l40 35v25H180Z" fill="#FF4F8B"/>
+ <rect x="28" y="48" width="104" height="38" rx="6" fill="#2A1459"/><path d="M20 48h120l-8-14H28Z" fill="#fff"/><path d="M28 34h24v14H28zM76 34h24v14H76zM124 34h12v14h-12z" fill="#12A594"/>
+ <path d="M196 64h30l22 22h-52Z" fill="#2A1459" opacity=".85"/>
+ <g><circle class="whl" cx="70" cy="118" r="20" fill="#2A1459"/><circle cx="70" cy="118" r="7" fill="#FFC24B"/><circle class="whl" cx="215" cy="118" r="20" fill="#2A1459"/><circle cx="215" cy="118" r="7" fill="#FFC24B"/></g>
+</symbol></svg>
+
+<header class="sky" id="top">
+ <div class="wrap">
+  <div class="nav">
+   <a class="brand" href="#top"><svg width="38" height="40"><use href="#mark"/></svg>Truck Spot</a>
+   <div><a class="l" href="#app">Live map</a><a class="l" href="#menus">Menus</a><a class="l" href="#hours">Hours</a><a class="l" href="#notify">Alerts</a></div>
+  </div>
+  <div class="hcopy">
+   <h1>Dinner is on the move.</h1>
+   <p>Find the best food trucks around you in real time. Menus, hours and distance, all in one tap.</p>
+      <div class="btns">
+  <a class="store" href="#notify" aria-label="Download on the App Store">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff" aria-hidden="true">
+      <path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/>
+    </svg>
+    <div><span class="sx">Download on the</span><b>Apple Store</b></div>
+  </a>
+
+  <a class="store" href="#notify" aria-label="Get it on Google Play">
+    <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
+      <path fill="#00A0FF" d="M3.6 2.3 13.2 12 3.6 21.7z"/>
+      <path fill="#00F076" d="M3.6 2.3 16.9 9.4 13.2 12z"/>
+      <path fill="#FFD500" d="M16.9 9.4 21 11.4v1.2l-4.1 2-3.7-2.6z"/>
+      <path fill="#FF3A44" d="M13.2 12l3.7 2.6L3.6 21.7z"/>
+    </svg>
+    <div><span class="sx">Get it on</span><b>Google Play</b></div>
+  </a>
+</div>
+ </div>
+ <div class="sun" aria-hidden="true"></div>
+ <svg class="lights" viewBox="0 0 1000 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0 8Q250 70 500 20T1000 14" fill="none" stroke="#24103f" stroke-width="2"/><g id="bulbs"></g></svg>
+ <svg class="city" viewBox="0 0 1000 160" preserveAspectRatio="none" aria-hidden="true"><path fill="#4a1f78" d="M0 160V90h40V60h50v40h40V40h60v70h50V70h50v50h60V50h70v60h50V80h60V30h50v90h60V70h60v50h50V90h60v70Z"/><path fill="#33135c" d="M0 160V120h60V100h70v30h70V90h60v40h80V110h70v20h90V95h70v35h80V105h90v55Z"/></svg>
+ <div class="road" aria-hidden="true"></div>
+ <svg class="rtruck" viewBox="0 0 300 150" role="img" aria-label="A food truck driving in"><use href="#truck"/></svg>
+</header>
+
+<main class="wrap">
+ <section id="app">
+  <div class="demo">
+   <div>
+    <h2>Your whole street, in your pocket</h2>
+    <p>Try the app right here. Tap a pin, filter by what you crave, and see who’s open.</p>
+    <ul class="steps">
+     <li><span>📍</span>See trucks near you, live</li>
+     <li><span>🍜</span>Check the menu before you walk</li>
+     <li><span>⏰</span>Know exactly when they close</li>
+    </ul>
+   </div>
+   <div class="phone"><div class="scr">
+    <div class="top" id="fc" role="group" aria-label="Filter trucks"></div>
+    <svg id="map" viewBox="0 0 290 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Map of nearby food trucks">
+     <g stroke="var(--road)" stroke-width="12" stroke-linecap="round"><path d="M0 70H290M0 160H290M0 245H290M60 0V300M150 0V300M235 0V300"/></g>
+     <rect x="170" y="175" width="50" height="55" rx="10" fill="#7be0a8" opacity=".5"/>
+     <circle cx="150" cy="160" r="12" fill="#2f7bff" opacity=".3"/><circle cx="150" cy="160" r="6" fill="#2f7bff" stroke="#fff" stroke-width="2"/>
+     <g id="pins"></g>
+    </svg>
+    <div class="sheet" id="sheet" aria-live="polite"></div>
+   </div></div>
+  </div>
+ </section>
+  
+ 
+
+    <!-- DETAILS PANEL -->
+    
+
+ <section id="menus" style="padding-top:20px">
+  <h2>What’s cooking today</h2>
+  <div class="slider" id="slider" tabindex="0" aria-label="Truck menus"></div>
+ </section>
+
+ <section id="hours" style="padding-top:20px">
+  <h2>Who’s open, and when</h2>
+  <div class="tl"><div class="in" id="tl"></div></div>
+ </section>
+
+ <section id="notify" style="padding-top:20px">
+  <div class="notify">
+   <div><h2>Be first to know</h2><p>Get alerts when trucks park nearby, plus launch news. No app needed yet.</p></div>
+   <form id="form">
+    <input id="email" type="email" required placeholder="you@example.com" aria-label="Email address" autocomplete="email">
+    <button class="btn" type="submit">Notify me</button>
+    <button class="btn o" type="button" id="push">Turn on browser alerts</button>
+    <div id="msg" role="status"></div>
+   </form>
+  </div>
+ </section>
+</main>
+<footer>© 2026 Truck Spot design and development by Ahaan Software Consulting .</footer>
+
+<script src="script.js">
+</script>
+</body>
+</html>
